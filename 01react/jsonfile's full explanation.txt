@@ -1,0 +1,38 @@
+{
+  "name": "01react", // The name of your React application.
+  "version": "0.1.0", // The version of your application.
+  "private": true, // Indicates that this project is not meant to be published as a package.
+  "dependencies": { // Lists the packages required for your project to run.
+    "@testing-library/jest-dom": "^5.17.0", // Provides custom DOM element matchers for Jest.
+    "@testing-library/react": "^13.4.0", // Helps with testing React components.
+    "@testing-library/user-event": "^13.5.0", // Simulates user events for testing.
+    "react": "^18.3.1", // The core React library.
+    "react-dom": "^18.3.1", // React library for DOM rendering.
+    "react-scripts": "5.0.1", // Scripts and configuration used by Create React App.
+    "web-vitals": "^2.1.4" // Collects metrics to measure web performance.
+  },
+  "scripts": { // Defines the npm scripts for your project.
+    "start": "react-scripts start", // Starts the development server.
+    "build": "react-scripts build", // Builds the app for production.
+    "test": "react-scripts test", // Runs the test suite.
+    "eject": "react-scripts eject" // Ejects the configuration, allowing for customization.
+  },
+  "eslintConfig": { // Configuration for ESLint.
+    "extends": [
+      "react-app", // Uses the default Create React App ESLint configuration.
+      "react-app/jest" // Extends the configuration for Jest testing.
+    ]
+  },
+  "browserslist": { // Specifies browser support for the app.
+    "production": [ // Browsers supported in production builds.
+      ">0.2%", // Covers browsers with more than 0.2% market share.
+      "not dead", // Excludes browsers that are no longer maintained.
+      "not op_mini all" // Excludes Opera Mini browser.
+    ],
+    "development": [ // Browsers supported in development mode.
+      "last 1 chrome version", // The last version of Chrome.
+      "last 1 firefox version", // The last version of Firefox.
+      "last 1 safari version" // The last version of Safari.
+    ]
+  }
+}
