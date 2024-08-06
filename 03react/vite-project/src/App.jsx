@@ -15,7 +15,13 @@ function App() {
 
 
   const addValue = () => {
-    setCounter(prevCounter => {prevCounter + 1});
+    // Method - 1
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+
+    // method - 2 
     setCounter(counter+1);
     setCounter(counter+1);
     setCounter(counter+1);
